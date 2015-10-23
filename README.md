@@ -1,4 +1,4 @@
-**Yandex.Subtitles**
+**Subtitles**
 
 How to start
 ------------
@@ -22,7 +22,7 @@ License agreement on use of Yandex.Subtitles is available at [https://legal.yand
 
 -------------
 
-**Яндекс.Разговор**
+**Разговор**
 
 Как начать
 ------------
@@ -37,13 +37,13 @@ License agreement on use of Yandex.Subtitles is available at [https://legal.yand
 
 Как это работает
 ------------
-Приложение построено в соответствии со следующим принципом: Activity > Service > ContentProvider. Пользовательские действия отправляются на выполнение из Activity/Fragment в Service и там обрабатываются. Если какие-то данные требуется сохранить в базу данных, то Service организует асинхронную запись в БД. Из БД данные загружаются при помощи Loader, реализации которого подписываются на уведомления об изменении данных через ContentResolver. Ряд событий отправляется из Service broadcast-сообщениями.
+Приложение построено в соответствии со следующим принципом: `Activity` > `Service` > `ContentProvider`. Пользовательские действия отправляются на выполнение из `Activity`/`Fragment` в `Service` и там обрабатываются. Если какие-то данные требуется сохранить в базу данных, то `Service` организует асинхронную запись в БД. Из БД данные загружаются при помощи `Loader`, реализации которого подписываются на уведомления об изменении данных через `ContentResolver`. Ряд событий отправляется из `Service` broadcast-сообщениями.
 
 В приложении имеется два сервиса для работы с разными данными:
 * `PhrasesService` - Service, занимающийся обработкой событий добавления, редактирования и удаления стартовых фраз. Дополнительно сервис управляет обновлением предзаписанных голосовых семплов.
 * `MessagingService` - Service, занимающийся диспетчеризацией событий мессенджинга и распознавания.
 
-За работу с базой данных и ContentProvider-ом отвечают классы пакета [content](https://github.com/yandexmobile/mobile-yandex-subtitles-android/blob/master/app/src/main/java/ru/yandex/subtitles/content/).
+За работу с базой данных и `ContentProvider`-ом отвечают классы пакета [content](https://github.com/yandexmobile/mobile-yandex-subtitles-android/blob/master/app/src/main/java/ru/yandex/subtitles/content/).
 
 Лицензия
 ---------
