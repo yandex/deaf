@@ -13,7 +13,13 @@ How to start
 
 How does it work
 ------------
-Application architecture design based on the following principle: Activity > Service > ContentProvider. Service receives and executes user actions that sent from Activity/Fragment. Service also executes async writing to the database when it's needed.
+Application architecture design based on the following principle: `Activity` > `Service` > `ContentProvider`. `Service` receives and executes user actions that sent from `Activity`/`Fragment`. `Service` also executes async writing to the database when it's needed. Data loads from database by using `Loader` classes that get callbacks when data identified by a given content URI changes. Some events send from `Service` by using broadcast messages.
+
+There are two services to work with different kinds of data:
+* `PhrasesService` is a service that handles add, edit and delete starting phrases. Also service dispatches events to invalidate audio samples.
+* `MessagingService` is a service that dispatches messaging and recognition events.
+
+Please see package [content](https://github.com/yandexmobile/mobile-yandex-subtitles-android/blob/master/app/src/main/java/ru/yandex/subtitles/content/) for more details about working with data in the app. If you want to get more details about `ContentProvider` please refer to [official documentation](http://developer.android.com/intl/ru/guide/topics/providers/content-provider-basics.html).
 
 License
 ---------
@@ -37,15 +43,15 @@ License agreement on use of Yandex.Subtitles is available at [https://legal.yand
 
 Как это работает
 ------------
-Приложение построено в соответствии со следующим принципом: `Activity` > `Service` > `ContentProvider`. Пользовательские действия отправляются на выполнение из `Activity`/`Fragment` в `Service` и там обрабатываются. Если какие-то данные требуется сохранить в базу данных, то `Service` организует асинхронную запись в БД. Из БД данные загружаются при помощи `Loader`, реализации которого подписываются на уведомления об изменении данных через `ContentResolver`. Ряд событий отправляется из `Service` broadcast-сообщениями.
+Приложение построено в соответствии со следующим принципом: `Activity` > `Service` > `ContentProvider`. Пользовательские действия отправляются на выполнение из `Activity`/`Fragment` в `Service` и там обрабатываются. Если какие-то данные требуется сохранить в базу данных, то `Service` организует асинхронную запись в БД. Из БД данные загружаются при помощи `Loader`, реализации которого получают уведомления, когда изменяются данные, идентифицированные предоставленным content uri. Ряд событий отправляется из `Service` broadcast-сообщениями.
 
 В приложении имеется два сервиса для работы с разными данными:
 * `PhrasesService` - Service, занимающийся обработкой событий добавления, редактирования и удаления стартовых фраз. Дополнительно сервис управляет обновлением предзаписанных голосовых семплов.
 * `MessagingService` - Service, занимающийся диспетчеризацией событий мессенджинга и распознавания.
 
-За работу с базой данных и `ContentProvider`-ом отвечают классы пакета [content](https://github.com/yandexmobile/mobile-yandex-subtitles-android/blob/master/app/src/main/java/ru/yandex/subtitles/content/).
+За работу с базой данных и `ContentProvider`-ом отвечают классы пакета [content](https://github.com/yandexmobile/mobile-yandex-subtitles-android/blob/master/app/src/main/java/ru/yandex/subtitles/content/). Для получения дополнительной информации по работе с `ContentProvider` рекомендуем обраться к [официальной документации](http://developer.android.com/intl/ru/guide/topics/providers/content-provider-basics.html).
 
 Лицензия
 ---------
 
-Лицензионное соглашение по использованию Яндекс.Разговора available at [https://legal.yandex.ru/talk_mobile_agreement](https://legal.yandex.ru/talk_mobile_agreement).
+Лицензионное соглашение по использованию Яндекс.Разговора доступно по ссылке [https://legal.yandex.ru/talk_mobile_agreement](https://legal.yandex.ru/talk_mobile_agreement).
