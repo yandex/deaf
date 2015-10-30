@@ -42,7 +42,9 @@ License
 -------
 
 License agreement on use of Talk is available at [https://legal.ru/talk_mobile_agreement](https://legal.ru/talk_mobile_agreement).
+
 License agreement on use of Yandex SpeechKit Mobile SDK API is available at [https://legal.yandex.ru/speechkit/](https://legal.yandex.ru/speechkit/).
+
 License agreement on use of Yandex SpeechKit Cloud is available at [https://legal.yandex.ru/speechkit_cloud/](https://legal.yandex.ru/speechkit_cloud/).
 
 -------------
@@ -90,5 +92,7 @@ License agreement on use of Yandex SpeechKit Cloud is available at [https://lega
 --------
 
 Лицензионное соглашение по использованию Разговора доступно по ссылке [https://legal.ru/talk_mobile_agreement](https://legal.ru/talk_mobile_agreement).
+
 Лицензионное соглашение по использованию Яндекс SpeechKit Mobile SDK API доступно по ссылке [https://legal.yandex.ru/speechkit/](https://legal.yandex.ru/speechkit/).
+
 Лицензионное соглашение по использованию Яндекс SpeechKit Cloud доступно по ссылке [https://legal.yandex.ru/speechkit_cloud/](https://legal.yandex.ru/speechkit_cloud/).
