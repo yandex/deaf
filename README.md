@@ -7,8 +7,8 @@ If you're looking to install Talk for Android, you can find it on [Google Play](
 
 How to start
 ------------
-*  Clone repository: git clone https://github.com/mobile-subtitles-android.git.
-*  Import project to **Android Studio**.
+*  Clone repository: git clone https://github.com/mobile-ubtitles-android.git.
+*  Import project to **Android Studio** (version 1.2 or higher).
 *  App is based on Yandex.SpeechKit technology and you should register your Mobile SDK API key at [Yandex.SpeechKit Mobile SDK documentation](https://tech.yandex.com/speechkit/mobilesdk/).
 *  Open class [SpeechKitInitializer.java](https://github.com/mobile-subtitles-android/blob/master/app/src/main/java/ru/subtitles/service/speechkit/initializer/SpeechKitInitializer.java) and replace `API_KEY` value by registered Mobile SDK API key.
 *  Also you should provide API key for Yandex.SpeechKit Cloud. Register your Yandex.SpeechKit Cloud API key at [Yandex.SpeechKit Cloud documentation](https://tech.yandex.ru/speechkit/cloud/).
@@ -16,12 +16,14 @@ How to start
 *  If you want to track user activity in application you should enable `YandexMetricaEventTracker` or provide your own `EventTracker` implementation. Please see [SubtitlesApplication.java](https://github.com/mobile-subtitles-android/blob/master/app/src/main/java/ru/subtitles/SubtitlesApplication.java) for more details.
 *  Now you are ready to launch project!
 
+Please notice, project requires the following tools have been already installed: Android SDK (API 16-23), Android Support Repository rev. 24, Android Support Library rev. 23.1, Build Tools rev. 21.1.2.
+
 How does it work
 ----------------
 Application architecture design based on the following principle: `Activity` > `Service` > `ContentProvider`. `Service` receives and executes user actions that sent from `Activity`/`Fragment`. `Service` also executes async writing to the database when it's needed. Data loads from database by using `Loader` classes that get callbacks when data identified by a given content URI changes. Some events send from `Service` by using broadcast messages.
 
 There are two services to work with different kinds of data:
-* `PhrasesService` is a service that handles additing, editing and deleting starting phrases. Also service dispatches events to invalidate audio samples.
+* `PhrasesService` is a service that handles adding, editing and deleting starting phrases. Also service dispatches events to invalidate audio samples.
 * `MessagingService` is a service that dispatches messaging and recognition events.
 
 Please see package [content](https://github.com/mobile-subtitles-android/blob/master/app/src/main/java/ru/subtitles/content/) for more details about working with data in the app. If you want to get more details about `ContentProvider` please refer to [official documentation](http://developer.android.com/intl/ru/guide/topics/providers/content-provider-basics.html).
@@ -40,6 +42,8 @@ License
 -------
 
 License agreement on use of Talk is available at [https://legal.ru/talk_mobile_agreement](https://legal.ru/talk_mobile_agreement).
+License agreement on use of Yandex SpeechKit Mobile SDK API is available at [https://legal.yandex.ru/speechkit/](https://legal.yandex.ru/speechkit/).
+License agreement on use of Yandex SpeechKit Cloud is available at [https://legal.yandex.ru/speechkit_cloud/](https://legal.yandex.ru/speechkit_cloud/).
 
 -------------
 
@@ -53,13 +57,15 @@ License agreement on use of Talk is available at [https://legal.ru/talk_mobile_a
 Как начать
 ----------
 *  Клонируйте репозиторий проекта: git clone https://github.com/mobile-subtitles-android.git.
-*  Импортируйте проект в **Android Studio**.
+*  Импортируйте проект в **Android Studio** (минимальная версия 1.2).
 *  Приложение основано на технологии Yandex.SpeechKit и Вы должны зарегистрировать свой API ключ для работы с Mobile SDK. [Документация Yandex.SpeechKit Mobile SDK](https://tech.yandex.ru/speechkit/mobilesdk/).
 *  Откройте класс [SpeechKitInitializer.java](https://github.com/mobile-subtitles-android/blob/master/app/src/main/java/ru/subtitles/service/speechkit/initializer/SpeechKitInitializer.java) и замените значение константы `API_KEY` ключом, полученным в предыдущем пункте.
 *  Также Вы должны получить API ключ для работы с Yandex.SpeechKit Cloud. Получить ключ можно здесь: [Документация Yandex.SpeechKit Cloud](https://tech.yandex.ru/speechkit/cloud/).
 *  Откройте класс [SpeechKitTtsCloudApi.java](https://github.com/mobile-subtitles-android/blob/master/app/src/main/java/ru/subtitles/service/cache/SpeechKitTtsCloudApi.java) и замените значение константы `API_KEY` ключом, полученным в предыдущем пункте.
 *  Если Вы хотите отслеживать активность пользователей в приложении Вы должны активировать `YandexMetricaEventTracker` или предоставить свою собственную реализацию интерфейса `EventTracker`. Дополнительная информация находится в файле [SubtitlesApplication.java](https://github.com/mobile-subtitles-android/blob/master/app/src/main/java/ru/subtitles/SubtitlesApplication.java).
 *  Теперь Вы готовы к запуску проекта!
+
+Обратите внимание, что для запуска проекта требуется Android SDK с установленными платформами 16-23, Android Support Repository rev. 24, Android Support Library rev. 23.1, Build Tools rev. 21.1.2.
 
 Как это работает
 ----------------
@@ -84,3 +90,5 @@ License agreement on use of Talk is available at [https://legal.ru/talk_mobile_a
 --------
 
 Лицензионное соглашение по использованию Разговора доступно по ссылке [https://legal.ru/talk_mobile_agreement](https://legal.ru/talk_mobile_agreement).
+Лицензионное соглашение по использованию Яндекс SpeechKit Mobile SDK API доступно по ссылке [https://legal.yandex.ru/speechkit/](https://legal.yandex.ru/speechkit/).
+Лицензионное соглашение по использованию Яндекс SpeechKit Cloud доступно по ссылке [https://legal.yandex.ru/speechkit_cloud/](https://legal.yandex.ru/speechkit_cloud/).
