@@ -91,4 +91,4 @@ License agreement on use of Yandex SpeechKit Cloud is available at [https://lega
 
 Лицензионное соглашение по использованию Яндекс SpeechKit Mobile SDK API доступно по ссылке [https://legal.yandex.ru/speechkit/](https://legal.yandex.ru/speechkit/).
 
-Лицензионное соглашение по использованию Яндекс SpeechKit Cloud доступно по ссылке [https://legal.yandex.ru/speechkit_cloud/](https://legal.yandex.ru/speechkit_cloud/).
+Лицензионное соглашение по использованию Яндекс SpeechKit Cloud доступно по ссылке [https://legal.yandex.ru/speechkit_cloud/](https://legal.yandex.ru/speechkit_cloud/)
