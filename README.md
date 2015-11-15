@@ -47,48 +47,64 @@ License agreement on use of Yandex SpeechKit Cloud is available at [https://lega
 
 -------------
 
-**Разговор**
+**Яндекс.Разговор** - мобильное приложение для глухих и слабослышащих людей.
 
-[Разговор](https://mobile.ru/apps/android/talk#page1) – помощник в личном общении между людьми с потерей слуха и слышащими. Приложение переводит сказанное собеседником в текст, и наоборот, может озвучить написанное. Кроме того, в приложении есть ряд функций, которые делают общение с помощью Разговора быстрым и удобным: увеличивание фраз, шаблонные фразы и история диалогов.
+Что это за проект
+-----------------
+Мы пытаемся решить проблему общения глухих и слабослышащих людей с окружающими: родственниками, друзьями, знакомыми и незнакомыми людьми.
 
-Если вы хотите установить Разговор на Android, то можете найти его на [Google Play](https://play.google.com/store/apps/details?id=ru.subtitles). Если же вы разработчик, который хочет принять участие в развитии проекта, то продолжайте чтение.
+Мобильное приложение [Разговор](https://mobile.yandex.ru/apps/android/talk#main) переводит речь в текст и, наоборот, может озвучить написанное. Для распознавания и синтеза речи используются  [речевые технологии Яндекса](https://tech.yandex.ru/speechkit/). В приложении также есть набор готовых реплик и история диалогов, возможность использовать увеличенный размер шрифта. 
 
+Готовое приложение для платформы Android можно скачать в [Google Play](https://play.google.com/store/apps/details?id=ru.yandex.subtitles).
+
+В этом репозитории находится Android Studio проект.
 
 Как начать
 ----------
-*  Клонируйте репозиторий проекта: git clone https://github.com/mobile-subtitles-android.git.
-*  Импортируйте проект в **Android Studio** (минимальная версия 1.2).
-*  Приложение основано на технологии Yandex.SpeechKit и Вы должны зарегистрировать свой API ключ для работы с Mobile SDK. [Документация Yandex.SpeechKit Mobile SDK](https://tech.yandex.ru/speechkit/mobilesdk/).
-*  Откройте класс [SpeechKitInitializer.java](https://github.com/mobile-subtitles-android/blob/master/app/src/main/java/ru/subtitles/service/speechkit/initializer/SpeechKitInitializer.java) и замените значение константы `API_KEY` ключом, полученным в предыдущем пункте.
-*  Также Вы должны получить API ключ для работы с Yandex.SpeechKit Cloud. Получить ключ можно здесь: [Документация Yandex.SpeechKit Cloud](https://tech.yandex.ru/speechkit/cloud/).
-*  Откройте класс [SpeechKitTtsCloudApi.java](https://github.com/mobile-subtitles-android/blob/master/app/src/main/java/ru/subtitles/service/cache/SpeechKitTtsCloudApi.java) и замените значение константы `API_KEY` ключом, полученным в предыдущем пункте.
-*  Если Вы хотите отслеживать активность пользователей в приложении Вы должны активировать `YandexMetricaEventTracker` или предоставить свою собственную реализацию интерфейса `EventTracker`. Дополнительная информация находится в файле [SubtitlesApplication.java](https://github.com/mobile-subtitles-android/blob/master/app/src/main/java/ru/subtitles/SubtitlesApplication.java).
-*  Теперь Вы готовы к запуску проекта!
+Если вы хотите создать Android-приложение на основе Яндекс.Разговора:
 
-Обратите внимание, что для запуска проекта требуется Android SDK с установленными платформами 16-23, Android Support Repository rev. 24, Android Support Library rev. 23.1, Build Tools rev. 21.1.2.
+1. Клонируйте репозиторий проекта:
 
-Как это работает
+<[git clone https://github.com/mobile-subtitles-android.git.]>
+
+2. Получите бесплатные API-ключи для [SpeechKit Mobile SDK](https://tech.yandex.ru/speechkit/mobilesdk/) и [SpeechKit Cloud API](https://tech.yandex.ru/speechkit/cloud/). Обратите, пожалуйста, внимание, что существуют ограничения на количество обращений.
+
+3. Откройте проект в Android Studio.
+
+4. Откройте файл SpeechKitInitializer.java и замените значение константы API_KEY ключом для Mobile SDK, который вы получили в [Кабинете разработчика](https://developer.tech.yandex.ru/). Также откройте файл SpeechKitTtsCloudApi.java и замените значение константы API_KEY ключом, полученным для SpeechKit Cloud. В основном приложение использует Mobile SDK, но Cloud API используется для того, чтобы обеспечить озвучивание ранее сохраненных фраз без подключения к интернету.
+
+5. Чтобы отслеживать активность пользователей в приложении, активируйте YandexMetricaEventTracker или реализуйте интерфейс EventTracker. Дополнительная информация есть в описании класса SubtitlesApplication.
+
+Если вы хотите внести свой вклад в развитие приложения Яндекс.Разговор, отправляйте pull request в ветку master, с детальным описанием изменений.
+
+Что необходимо
+--------------
+* Android Studio версии 1.2 и выше,
+* Android SDK, уровень API 16—23,
+* Android Support Repository версии 24,
+* Android Support Library версии 23.1,
+* Build Tools версии 21.1.2.
+
+Как это устроено
 ----------------
-Приложение построено в соответствии со следующим принципом: `Activity` > `Service` > `ContentProvider`. Пользовательские действия отправляются на выполнение из `Activity`/`Fragment` в `Service` и там обрабатываются. Если какие-то данные требуется сохранить в базу данных, то `Service` организует асинхронную запись в БД. Из БД данные загружаются при помощи `Loader`, реализации которого получают уведомления, когда изменяются данные, идентифицированные предоставленным content uri. Ряд событий отправляется из `Service` broadcast-сообщениями.
+Приложение построено на работе со [службами](http://developer.android.com/intl/ru/guide/components/services.html), в соответствии со схемой: Activity > Service > ContentProvider. Действия пользователя отправляются из Activity > Fragment в службу и обрабатываются службой.
 
-В приложении имеется два сервиса для работы с разными данными:
-* `PhrasesService` - Service, занимающийся обработкой событий добавления, редактирования и удаления стартовых фраз. Дополнительно сервис управляет обновлением предзаписанных голосовых семплов.
-* `MessagingService` - Service, занимающийся диспетчеризацией событий мессенджинга и распознавания.
+Служба также обеспечивает асинхронную запись в базу данных. Выгрузка из базы данных контролируется Loader, различные реализации которого получают уведомления, когда изменяются данные. Ряд событий отправляется из службы broadcast-сообщениями. За работу с базой данных и поставщиком контента (ContentProvider) отвечают классы пакета content. 
 
-За работу с базой данных и `ContentProvider`-ом отвечают классы пакета [content](https://github.com/mobile-subtitles-android/blob/master/app/src/main/java/ru/subtitles/content/). Для получения дополнительной информации по работе с `ContentProvider` рекомендуем обраться к [официальной документации](http://developer.android.com/intl/ru/guide/topics/providers/content-provider-basics.html).
+Для служб используются классы:
 
-Дополнительная информация
--------------------------
+PhrasesService — служба, отвечающая за обработку следующих событий: добавление, редактирование и удаление стартовых фраз. Также управляет обновлением образцов речи.
 
-Также у этого проекта есть:
-* [Wiki](https://github.com/mobile-subtitles-android/wiki), в которой содержится полезная информация о приложении.
-* JavaDoc, который находится в mobile-subtitles-android/doc. В нем содержится описание базовых классов и методов приложения.
+MessagingService - служба для управления событиями мессенджинга и распознавания.
 
-Если вы хотите сообщить об ошибке или предложить идею в развитии, то напишите об этом, пожалуйста, в [Issues](https://github.com/mobile-subtitles-android/issues).
+Что читать
+----------
+* Дополнительную информацию о приложении Разговор можно найти в Wiki.
+* Документация проекта (сгенерированная JavaDoc) находится в mobile-subtitles-android/doc. Справочник содержит описание основных классов и методов.
+* Информацию о работе с поставщиком контента ContentProvider можно найти в [официальной документации](http://developer.android.com/intl/ru/guide/topics/providers/content-provider-basics.html ). 
 
 Лицензия
 --------
+Лицензия на исходный код приложения Разговор находится в файле LICENSE в репозитории.
 
-Лицензионное соглашение по использованию Яндекс SpeechKit Mobile SDK API доступно по ссылке [https://legal.yandex.ru/speechkit/](https://legal.yandex.ru/speechkit/).
-
-Лицензионное соглашение по использованию Яндекс SpeechKit Cloud доступно по ссылке [https://legal.yandex.ru/speechkit_cloud/](https://legal.yandex.ru/speechkit_cloud/)
+Лицензионное соглашение [Яндекс SpeechKit Mobile SDK](https://legal.yandex.ru/speechkit/) и [SpeechKit Cloud API](https://legal.yandex.ru/speechkit_cloud/).
