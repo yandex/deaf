@@ -47,7 +47,7 @@ License agreement on use of Yandex SpeechKit Cloud is available at [https://lega
 
 -------------
 
-**Яндекс.Разговор** - мобильное приложение для глухих и слабослышащих людей.
+**Разговор** - мобильное приложение для глухих и слабослышащих людей.
 
 Что это за проект
 -----------------
@@ -65,7 +65,7 @@ License agreement on use of Yandex SpeechKit Cloud is available at [https://lega
 
 1. Клонируйте репозиторий проекта:
 
-<[git clone https://github.com/mobile-subtitles-android.git.]>
+'git clone https://github.com/mobile-subtitles-android.git'
 
 2. Получите бесплатные API-ключи для [SpeechKit Mobile SDK](https://tech.yandex.ru/speechkit/mobilesdk/) и [SpeechKit Cloud API](https://tech.yandex.ru/speechkit/cloud/). Обратите, пожалуйста, внимание, что существуют ограничения на количество обращений.
 
@@ -107,4 +107,4 @@ MessagingService - служба для управления событиями �
 --------
 Лицензия на исходный код приложения Разговор находится в файле LICENSE в репозитории.
 
-Лицензионное соглашение [Яндекс SpeechKit Mobile SDK](https://legal.yandex.ru/speechkit/) и [SpeechKit Cloud API](https://legal.yandex.ru/speechkit_cloud/).
+Лицензионное соглашение [Yandex SpeechKit Mobile SDK](https://legal.yandex.ru/speechkit/) и [Yandex SpeechKit Cloud API](https://legal.yandex.ru/speechkit_cloud/).
