@@ -60,7 +60,7 @@ Licensing agreements: [Yandex SpeechKit Mobile SDK](https://legal.yandex.ru/spee
 
 Contacts
 --------
-If you want to ask a question, report an error, or suggest a new idea, send a message to ((Issues)).
+If you want to ask a question, report an error, or suggest a new idea, send a message to [Issues](https://github.com/AkmalArtikov/deaf/issues).
 
 --------------------
 
@@ -126,4 +126,4 @@ MessagingService - служба для управления событиями �
 
 Контакты
 --------
-Если вы хотите задать вопрос, сообщить об ошибке или предложить новую идею, напишите, пожалуйста, в ((Issues)).
+Если вы хотите задать вопрос, сообщить об ошибке или предложить новую идею, напишите, пожалуйста, в [Issues](https://github.com/AkmalArtikov/deaf/issues).
