@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color">
+
+        <ru.yandex.subtitles.ui.widget.microphonebar.MicrophoneBarView
+            android:id="@+id/microphone_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ru.yandex.subtitles.ui.widget.InterceptableToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center_vertical"
+            android:popupTheme="@style/Widget.AppCompat.PopupMenu"
+            android:theme="@style/Widget.Subtitles.Toolbar"
+            app:popupTheme="@style/Widget.AppCompat.PopupMenu"/>
+
+    </FrameLayout>
+
+    <View style="@style/Widget.Subtitles.Toolbar.Divider"/>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

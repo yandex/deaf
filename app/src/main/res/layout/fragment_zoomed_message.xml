@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ru.yandex.subtitles.ui.widget.FontFitTextView
+        android:id="@+id/message"
+        style="@style/Widget.Subtitles.TextView.Zoomed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:keepScreenOn="true"
+        android:paddingBottom="@dimen/content_inset_material"
+        android:paddingLeft="@dimen/dimen_32dp"
+        android:paddingRight="@dimen/dimen_32dp"
+        android:paddingTop="@dimen/content_inset_material"
+        tools:text="De gustibus non est disputandum"/>
+
+</FrameLayout>

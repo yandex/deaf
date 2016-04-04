@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zoomed_message_background_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/description"
+            style="@style/Widget.Subtitles.TextView.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:clickable="true"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1"
+            android:paddingBottom="0dp"
+            android:paddingLeft="@dimen/dimen_48dp"
+            android:paddingRight="@dimen/dimen_48dp"
+            android:paddingTop="@dimen/dimen_32dp"
+            android:text="@string/zoomed_message_description"
+            android:textSize="@dimen/text_size_description_zoomed"
+            android:visibility="gone"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/slide_prev"
+                android:layout_width="@dimen/zoomed_message_slide_panel_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|start|bottom"
+                android:layout_marginBottom="@dimen/keyline_end_content"
+                android:layout_marginTop="@dimen/keyline_end_content"
+                android:background="?selectableItemBackground"
+                android:contentDescription="@string/content_description_slide_prev"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_action_slide_prev"/>
+
+            <ImageView
+                android:id="@+id/slide_next"
+                android:layout_width="@dimen/zoomed_message_slide_panel_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="end|right|bottom"
+                android:layout_marginBottom="@dimen/keyline_end_content"
+                android:layout_marginTop="@dimen/keyline_end_content"
+                android:background="?selectableItemBackground"
+                android:contentDescription="@string/content_description_slide_next"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_action_slide_next"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right|end"
+        android:orientation="horizontal">
+
+        <ru.yandex.subtitles.ui.widget.SpeakerView
+            android:id="@+id/speaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_8dp"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:contentDescription="@string/content_description_play"
+            android:minHeight="@dimen/dimen_48dp"
+            android:minWidth="@dimen/dimen_48dp"
+            app:alternateLayout="@layout/view_zoomed_message_speaker"/>
+
+        <ImageView
+            android:id="@+id/exit_fullscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_8dp"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_exit_fullscreen"/>
+
+    </LinearLayout>
+
+</LinearLayout>

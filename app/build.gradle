@@ -1,0 +1,122 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url 'https://raw.github.com/xujiaao/mvn-repository/master/releases' }
+    }
+
+    dependencies {
+        classpath 'com.github.xujiaao:aarLinkSources:1.0.0'
+    }
+}
+
+int MAJOR_VERSION = 1
+int MINOR_VERSION = 1
+int VERSION_PATCH = 1
+int BUILD_NUMBER = 1
+
+apply plugin: 'com.android.application'
+apply plugin: 'aar-link-sources'
+
+def buildNumber = BUILD_NUMBER  // any build number for local build
+def code = MAJOR_VERSION * 10000 + MINOR_VERSION * 1000 + VERSION_PATCH * 100 + buildNumber
+println "Version code is ${code}"
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 22
+
+        versionCode code
+        versionName "${MAJOR_VERSION}.${MINOR_VERSION}.${VERSION_PATCH}"
+        applicationId rootProject.applicationId.toString()
+
+        buildConfigField "int", "DATABASE_VERSION", "14"
+        buildConfigField "long", "BUILD_TIME", "${System.currentTimeMillis()}L"
+        buildConfigField "int", "BUILD_NUMBER", "${BUILD_NUMBER}"
+
+        resValue "string", "support_email", "${project.property('support.email')}"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+        }
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+        }
+    }
+
+    productFlavors {
+        dev {
+            setApplicationId(rootProject.applicationId.toString() + ".dev")
+        }
+    }
+
+    sourceSets {
+        dev {
+            res.srcDirs += 'src/dev/res/'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                println "Output filename: ${outputFile.name}"
+                def fileName = outputFile.name.replace("-${outputFile.name}", "")
+                        .replace("-${buildType.name}", "")
+                        .replace(".apk", "-v${variant.versionName}.apk")
+                println "Output generated filename: ${fileName}"
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    flatDir {
+        dirs 'repo'
+    }
+}
+
+dependencies {
+    compile 'com.yandex.android:speechkit:2.5.0'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+
+    compile 'com.github.castorflex.smoothprogressbar:library-circular:1.0.1'
+    compile 'org.solovyev.android.views:linear-layout-manager:0.5@aar'
+
+    compile ('com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:0.8.3@aar') {
+        transitive=true
+    }
+    aarLinkSources 'com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:0.8.3:sources@jar'
+
+    compile 'com.yandex.android:mobmetricalib:2.21@aar'
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.2@aar') {
+        transitive = true;
+    }
+}

@@ -1,0 +1,183 @@
+<resources>
+    <string name="app_name">Розмова</string>
+
+    <string name="locale">uk-UA</string>
+
+    <string name="action_add_phrase">Додати фразу</string>
+    <string name="action_edit">Редагувати</string>
+    <string name="action_delete">Видалити</string>
+    <string name="starting_phrases">Готові фрази</string>
+    <string name="content_description_more">Раскрыть опции</string>
+    <string name="add_phrase">Додати фразу</string>
+    <string name="edit_phrase">Змінити фразу</string>
+    <string name="save">Зберегти</string>
+    <string name="cancel">Скасувати</string>
+    <string name="you_have_no_phrases">У вас немає жодної стартовою фрази</string>
+
+    <string name="widget_name">Розмова</string>
+
+    <string name="start_conversation">Новий діалог</string>
+    <string name="conversations">Історія діалогів</string>
+    <string name="settings">Налаштування</string>
+
+    <string name="other_yandex_apps">Інші програми Яндекса</string>
+    <string name="other_yandex_apps_url">https://mobile.yandex.ua</string>
+    <string name="yandex_browser">Браузер</string>
+    <string name="yandex_browser_package">com.yandex.browser</string>
+    <string name="yandex_navigator">Навігатор</string>
+    <string name="yandex_navigator_package">ru.yandex.yandexnavi</string>
+    <string name="yandex_disk">Диск</string>
+    <string name="yandex_disk_package">ru.yandex.disk</string>
+    <string name="yandex_translate">Переклад</string>
+    <string name="yandex_translate_package">ru.yandex.translate</string>
+    <string name="yandex_city">Місто</string>
+    <string name="yandex_city_package">ru.yandex.yandexcity</string>
+    <string name="yandex_maps">Карти</string>
+    <string name="yandex_maps_package">ru.yandex.yandexmaps</string>
+    <string name="yandex_metro">Метро</string>
+    <string name="yandex_metro_package">ru.yandex.metro</string>
+
+    <string name="settings_vocalization">Синтез мови</string>
+    <string name="settings_vocalization_male">Чоловічий</string>
+    <string name="settings_vocalization_female">Жіночий</string>
+    <string name="settings_recognition_language">Мова розпізнавання</string>
+    <string name="settings_recognition_language_russian">Русский</string>
+    <string name="settings_recognition_language_ukrainian">Український</string>
+    <string name="settings_other">Додатково</string>
+
+    <string name="about_app">Про програму</string>
+    <string name="about_speech_kit">Про мовні технології Яндекса</string>
+    <string name="feedback">Зворотний зв\'язок</string>
+    <string name="share_app">Розповісти про програму</string>
+
+    <string name="yandex_conversation">Розмова</string>
+    <string name="app_version_format">Версія %1$s від %2$s</string>
+    <string name="app_build_format">Збірка %1$d</string>
+    <string name="learn_more">Докладніше</string>
+    <string name="license_agreement">Ліцензійна угода</string>
+    <string name="license_agreement_url">https://legal.yandex.ua/talk_mobile_agreement</string>
+    <string name="copyright_format">© %1$s «ЯНДЕКС»</string>
+	<string name="about_speechkit">Мовні технології, на базі\nяких працює Розмова.\nДеякі можливості\nSpeechKit доступні як API.</string>
+	<string name="share">Поділитися</string>
+    <string name="content_for_sharing">Спілкуйтеся за допомогою Розмови та допомагайте розвивати мовні технології Яндекса.\nhttps://play.google.com/store/apps/details?id=ru.yandex.subtitles</string>
+    <string name="feedback_write_something_nice">Напишіть ваш відгук або повідомте про помилку</string>
+    <string name="feedback_subject">Відгук про програму Розмова</string>
+    <string name="device_model_format">Модель телефона: %1$s</string>
+    <string name="android_version_format">Версія ОС: %1$s</string>
+    <string name="build_version_format">Версія програми: %1$s</string>
+    <string name="send">Надіслати</string>
+
+    <string name="you_have_no_conversations">У вас немає збережених діалогів</string>
+    <string name="today_time_format">Сьогодні, %1$s</string>
+    <string name="yesterday_time_format">Учора, %1$s</string>
+    <string name="action_pin">Позначити</string>
+    <string name="action_unpin">Зняти мітку</string>
+
+    <string name="info">Iнформація</string>
+    <string name="zoomed_message_description">Я не слышу. Говорите, пожалуйста, в телефон: он переведёт вашу речь в печатный текст. Произносите слова медленно и разборчиво, используйте простую конструкцию предложений.</string>
+    <!-- TODO: restore to support Ukrainian. string name="zoomed_message_description">Я не чую. Говоріть, будь ласка, у телефон: він перетворить вашу мову на друкований текст. Вимовляйте слова повільно і розбірливо.</string-->
+    <string name="content_description_slide_prev">До попереднього</string>
+    <string name="content_description_slide_next">До наступного</string>
+    <string name="content_description_quick_responses">Швидкі відповіді</string>
+    <string name="content_description_send">Надіслати</string>
+    <string name="type_a_message">Введите сообщение</string>
+    <string name="action_fullscreen">На весь екран</string>
+    <string name="action_copy">Скопіювати</string>
+    <string name="message_has_been_copied_to_clipboard">Повідомлення було скопійовано в буфер обміну.</string>
+    <string name="change_orientation">Поворот екрана на 180 градусів</string>
+
+    <string name="recording">Слухаю</string>
+    <string name="microphone_turn_off">Мікрофон вимкнено</string>
+    <string name="speak_louder">Говоріть голосніше</string>
+    <string name="phrase_recognized">До вас звернулися</string>
+
+    <!-- SpeechKit errors -->
+    <string name="error_ok"></string>
+    <string name="error_api_key">Невірний API-ключ</string>
+    <string name="error_audio">Помилка запису звуку</string>
+    <string name="error_audio_player">Не вдалося ініціалізувати аудіоплеєр</string>
+    <string name="error_audio_permissions">Доступ до аудіо заборонений</string>
+    <string name="error_encoding">Помилка кодування</string>
+    <string name="error_network">Немає з\'єднання з інтернетом</string>
+    <string name="error_server">Помилка сервера</string>
+    <string name="error_cancelled">Операцію скасовано</string>
+    <string name="error_no_speech">Мови не</string>
+    <string name="error_no_text_to_syntesize">Немає тексту для синтезу мови</string>
+    <string name="error_not_available">Сервіс недоступний</string>
+    <string name="error_busy">Попередня операція не завершена</string>
+    <string name="error_unknown">Невідома помилка</string>
+    <string name="error_sk_not_initialized">Не вдалося запустити розпізнавання. Для роботи з програмою підключіться до мережі</string>
+
+    <string name="content_description_play">Озвучити</string>
+
+    <!-- Questionnaire -->
+    <string name="questionnaire_progress">%1$s / %2$s. Розкажіть про себе</string>
+
+    <string name="question_impairment">Чи є у вас порушення слуху?</string>
+    <string name="question_hearing2deaf">Як часто ви спілкуєтеся із глухими або тими, хто погано чує?</string>
+    <string name="question_person">Чи користуватиметеся ви програмою для спілкування з людиною із порушенням слуху?</string>
+    <string name="question_deaf2hearing">Як часто ви спілкуєтеся з тими, хто чує?</string>
+    <string name="question_articulation">Ви добре говорите?</string>
+    <string name="question_hearing">Як ви чуєте?</string>
+    <string name="question_lipreading">Чи добре ви читаєте по губах?</string>
+
+    <string-array name="questionnaire_articulation">
+		<item>Так, мене майже завжди розуміют</item>
+		<item>Ні, мене часто не розуміють</item>
+		<item>Я не розмовляю</item>
+    </string-array>
+
+    <string-array name="questionnaire_frequency" >
+		<item>Кожен день</item>
+		<item>Декілька разів на тиждень</item>
+		<item>Декілька разів на місяць</item>
+    </string-array>
+
+    <string-array name="questionnaire_yesno" >
+		<item>Так</item>
+		<item>Ні</item>
+    </string-array>
+
+    <string-array name="questionnaire_impairment" >
+		<item>Так, часткове</item>
+		<item>Так, повне</item>
+		<item>Ні, я добре чую</item>
+    </string-array>
+
+    <string-array name="questionnaire_lipreading" >
+		<item>Так</item>
+		<item>Не дуже</item>
+		<item>Я не читаю по губах</item>
+    </string-array>
+
+    <string name="quality_feedback_dialog_title">Оцініть якість розпізнавання</string>
+    <string name="quality_feedback_excellent_title">Чудово</string>
+    <string name="quality_feedback_excellent_subtitle">Зовсім без помилок</string>
+    <string name="quality_feedback_good_title">Добре</string>
+    <string name="quality_feedback_good_subtitle">Майже без помилок</string>
+    <string name="quality_feedback_not_good_title">Не дуже</string>
+    <string name="quality_feedback_not_good_subtitle">Багато помилок</string>
+    <string name="quality_feedback_bad_title">Погано</string>
+    <string name="quality_feedback_bad_subtitle">Здебільшого мова розпізнається неправильно</string>
+    <string name="close">Закрити</string>
+
+    <string name="tutorial_dialog_title">Зверніть увагу</string>
+    <string name="tutorial_dialog_block1">Програма може некоректно розпізнавати мовлення глухих і тих, хто погано чують. Також вона навряд чи допоможе зрозуміти, що говорять по телевізору або телефоном.</string>
+    <string name="tutorial_dialog_block2">Найкраще розпізнавання працює за таких умов:</string>
+    <string name="tutorial_dialog_list">\u00B7 у мовця хороша дикція;\n\u00B7 говорить одна людина;\n\u00B7 мовлення повільне, розбірливе і складається з простих конструкцій;\n\u00B7 навколо досить тихо;\n\u00B7 висока швидкість інтернету (3G, Wi-Fi).</string>
+
+    <string name="whats_new_dialog_title">Новини Розмови:</string>
+    <string name="whats_new_dialog_list_to_110">\u00B7 Віджет на головному екрані\n\u00B7 Розпізнавання довгих фраз\n\u00B7 Рекомендації щодо користування</string>
+    <string name="whats_new_dialog_list_to_111">\u00B7 Стартові репліки без підключення до інтернету\n\u00B7 Клавіатура із шістьма шаблонними фразами\n\u00B7 Поворот екрана чату на 180 градусів\n\u00B7 Природніші синтезовані голоси</string>
+
+    <string name="no_connection_dialog_title">Немає з\'єднання з інтернетом</string>
+    <string name="no_connection_dialog_text">Для роботи з програмою підключіться до мережі</string>
+
+    <string name="change_orientation_hint_dialog_title">Поворот екрана</string>
+    <string name="change_orientation_hint_dialog_text">Поверніть телефон мікрофоном до співрозмовника, це поліпшить якість розпізнавання мовлення.</string>
+    <string name="change_orientation_hint_dialog_orientation_locked">Для цього необхідно вимкнути блокування орієнтацій екрану.</string>
+    <string name="open_settings">До налаштувань</string>
+
+    <string name="dialog_button_neutral">Зрозуміло</string>
+
+</resources>

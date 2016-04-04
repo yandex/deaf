@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/recycler"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/white_bottom_dim_height"
+		android:layout_gravity="bottom"
+		android:background="@drawable/white_bottom_dim"/>
+
+	<ImageView
+		android:id="@+id/start_conversation"
+		style="@style/Widget.Subtitles.Button.Primary"
+		android:layout_width="@dimen/start_conversation_button_width"
+		android:layout_height="@dimen/view_min_height"
+        android:layout_gravity="bottom|center_horizontal"
+		android:scaleType="centerInside"
+		android:background="@drawable/start_conversation_button_background"
+        android:layout_margin="@dimen/start_conversation_button_margin"
+		android:contentDescription="@string/start_conversation"/>
+
+</FrameLayout>

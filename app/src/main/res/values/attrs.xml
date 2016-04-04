@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="microphoneBarStyle" format="reference" />
+    <declare-styleable name="MicrophoneBarStyle">
+        <attr name="background_normal_with_message" format="color"/>
+        <attr name="background_active" format="color"/>
+        <attr name="background_error" format="color"/>
+        <attr name="microphone_normal" format="color"/>
+        <attr name="microphone_pressed" format="color"/>
+        <attr name="microphone_error_normal" format="color"/>
+        <attr name="microphone_error_pressed" format="color"/>
+        <attr name="message_color" format="color"/>
+        <attr name="message_appearance_duration" format="reference|integer" />
+        <attr name="message_duration" format="reference|integer" />
+        <attr name="button_size" format="dimension" />
+        <attr name="src" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="SpeakerView">
+        <attr name="alternateLayout" format="reference" />
+    </declare-styleable>
+</resources>

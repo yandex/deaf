@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View style="@style/Widget.Subtitles.Toolbar.Divider"/>
+
+    <TextView
+        android:id="@+id/other_yandex_apps"
+        style="@style/Widget.Subtitles.TextView.YandexApps.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:minHeight="@dimen/menu_yandex_apps_title_min_height"
+        android:paddingLeft="@dimen/content_inset_material"
+        android:paddingRight="@dimen/content_inset_material"
+        android:text="@string/other_yandex_apps"
+        android:textColor="@color/color_other_yandex_apps"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:overScrollMode="never"
+        android:requiresFadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/yandex_apps_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"/>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

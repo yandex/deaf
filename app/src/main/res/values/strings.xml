@@ -1,0 +1,221 @@
+<resources>
+    <string name="app_name">Разговор</string>
+
+    <string name="locale">ru-RU</string>
+
+    <string name="locale_ru" translatable="false">ru-RU</string>
+    <string name="locale_ua" translatable="false">ua-UA</string>
+    <string name="locale_tr" translatable="false">tr-TR</string>
+
+    <string-array name="start_phrases_locale_ru" translatable="false">
+        <item>Я не слышу. Говорите, пожалуйста, в телефон: он переведёт вашу речь в печатный текст. Произносите слова медленно и разборчиво, используйте простую конструкцию предложений.</item>
+        <item>Я не слышу. Повторите, пожалуйста, что вы сказали.</item>
+        <item>Я не слышу. Пожалуйста, напишите, что вы хотите сказать.</item>
+        <item>Кто последний?</item>
+        <item>Какая следующая остановка?</item>
+        <item>Что происходит? Пожалуйста, объясните. Я не слышу.</item>
+        <item>Мне плохо! Пожалуйста, вызовите скорую.</item>
+        <item>Мне плохо! Пожалуйста, позвоните моим близким. Я покажу как.</item>
+        <item>Пожалуйста, подскажите, как пройти…</item>
+    </string-array>
+    <string-array name="start_phrases_samples_locale_ru" translatable="false">
+        <item>f0417d64-32c8-40bd-a072-11cfe48e3a53</item>
+        <item>d71e4ad5-2304-4c36-96b0-9fc15237d1a9</item>
+        <item>c88a62e0-39ae-4c99-9df9-dfc7b1c3fa24</item>
+        <item>d936b667-aa0a-4569-aa55-721c06dfb9f2</item>
+        <item>96760c32-78c8-42cd-8daf-09c6fbd032af</item>
+        <item>8f4b184d-178e-4b61-87ad-d171cc09803e</item>
+        <item>74a4a827-649b-4e83-8070-cbec3d5fc81d</item>
+        <item>1d416ea0-54d3-474d-8d8e-73d7dfe1a272</item>
+        <item>5ae45f37-ecd0-42fe-aec9-9a2ef1940acc</item>
+    </string-array>
+    <string-array name="quick_responses_locale_ru" translatable="false">
+        <item>Повторите ещё раз</item>
+        <item>У меня к вам вопрос</item>
+        <item>Говорите медленно и разборчиво</item>
+        <item>Напишите то, что Вы сказали</item>
+        <item>Здесь шумно: напишите</item>
+        <item>Здесь шумно: давайте отойдём</item>
+    </string-array>
+
+    <string name="action_add_phrase">Добавить фразу</string>
+    <string name="action_edit">Редактировать</string>
+    <string name="action_delete">Удалить</string>
+    <string name="starting_phrases">Готовые фразы</string>
+    <string name="content_description_more">Раскрыть опции</string>
+    <string name="add_phrase">Добавить фразу</string>
+    <string name="edit_phrase">Изменить фразу</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отменить</string>
+    <string name="you_have_no_phrases">У вас нет ни одной стартовой фразы</string>
+
+    <string name="widget_name">Разговор</string>
+
+    <string name="start_conversation">Новый диалог</string>
+    <string name="conversations">История диалогов</string>
+    <string name="settings">Настройки</string>
+
+    <string name="other_yandex_apps">Другие приложения Яндекса</string>
+    <string name="other_yandex_apps_url">https://mobile.yandex.ru</string>
+    <string name="yandex_browser">Браузер</string>
+    <string name="yandex_browser_package">com.yandex.browser</string>
+    <string name="yandex_navigator">Навигатор</string>
+    <string name="yandex_navigator_package">ru.yandex.yandexnavi</string>
+    <string name="yandex_disk">Диск</string>
+    <string name="yandex_disk_package">ru.yandex.disk</string>
+    <string name="yandex_translate">Перевод</string>
+    <string name="yandex_translate_package">ru.yandex.translate</string>
+    <string name="yandex_city">Город</string>
+    <string name="yandex_city_package">ru.yandex.yandexcity</string>
+    <string name="yandex_maps">Карты</string>
+    <string name="yandex_maps_package">ru.yandex.yandexmaps</string>
+    <string name="yandex_metro">Метро</string>
+    <string name="yandex_metro_package">ru.yandex.metro</string>
+
+    <string name="settings_vocalization">Синтез речи</string>
+    <string name="settings_vocalization_male">Мужской</string>
+    <string name="settings_vocalization_female">Женский</string>
+    <string name="settings_recognition_language">Язык распознавания</string>
+    <string name="settings_recognition_language_russian">Русский</string>
+    <string name="settings_recognition_language_ukrainian">Украинский</string>
+    <string name="settings_other">Дополнительно</string>
+
+    <string name="about_app">О приложении</string>
+    <string name="about_speech_kit">О речевых технологиях Яндекса</string>
+    <string name="feedback">Обратная связь</string>
+    <string name="share_app">Рассказать о приложении</string>
+
+    <string name="yandex_conversation">Разговор</string>
+    <string name="app_version_format">Версия %1$s от %2$s</string>
+    <string name="app_build_format">Сборка %1$d</string>
+    <string name="learn_more">Подробнее</string>
+    <string name="license_agreement">Лицензионное соглашение</string>
+    <string name="license_agreement_url">https://legal.yandex.ru/talk_mobile_agreement</string>
+    <string name="copyright_format">© %1$s «ЯНДЕКС»</string>
+    <string name="developer_yandex" translatable="false">Яндекс</string>
+    <string name="speechkit" translatable="false">Yandex SpeechKit</string>
+    <string name="about_speechkit">Речевые технологии, на базе\nкоторых работает Разговор.\nНекоторые из возможностей\nSpeechKit доступны в виде API.</string>
+    <string name="speechkit_api_link" translatable="false">http://api.yandex.ru/speechkit/</string>
+    <string name="share">Поделиться</string>
+    <string name="content_for_sharing">Общайтесь с помощью Разговора и помогайте развивать речевые технологии Яндекса.\nhttps://play.google.com/store/apps/details?id=ru.yandex.subtitles</string>
+    <string name="feedback_write_something_nice">Напишите здесь ваш отзыв или сообщите об ошибке</string>
+    <string name="feedback_subject">Отзыв о приложении Разговор</string>
+    <string name="device_model_format">Модель телефона: %1$s</string>
+    <string name="android_version_format">Версия ОС: %1$s</string>
+    <string name="build_version_format">Версия приложения: %1$s</string>
+    <string name="send">Отправить</string>
+
+    <string name="you_have_no_conversations">У вас нет сохраненных диалогов</string>
+    <string name="today_time_format">Сегодня, %1$s</string>
+    <string name="yesterday_time_format">Вчера, %1$s</string>
+    <string name="date_time_format" translatable="false">%1$s, %2$s</string>
+    <string name="action_pin">Отметить</string>
+    <string name="action_unpin">Снять метку</string>
+
+    <string name="info">Информация</string>
+    <string name="zoomed_message_description">Я не слышу. Говорите, пожалуйста, в телефон: он переведёт вашу речь в печатный текст. Произносите слова медленно и разборчиво, используйте простую конструкцию предложений.</string>
+    <string name="content_description_slide_prev">К предыдущему</string>
+    <string name="content_description_slide_next">К следующему</string>
+    <string name="content_description_quick_responses">Быстрые ответы</string>
+    <string name="content_description_send">Отправить</string>
+    <string name="type_a_message">Введите сообщение</string>
+    <string name="action_fullscreen">На весь экран</string>
+    <string name="action_copy">Скопировать</string>
+    <string name="message_has_been_copied_to_clipboard">Сообщение было скопировано в буфер обмена.</string>
+    <string name="change_orientation">Поворот на 180 градусов</string>
+
+    <string name="recording">Слушаю</string>
+    <string name="microphone_turn_off">Микрофон выключен</string>
+    <string name="speak_louder">Говорите громче</string>
+    <string name="phrase_recognized">К вам обратились</string>
+
+    <!-- SpeechKit errors -->
+    <string name="error_ok"></string>
+    <string name="error_api_key">Неверный API-ключ</string>
+    <string name="error_audio">Ошибка записи звука</string>
+    <string name="error_audio_player">Не удалось инициализировать аудио плеер</string>
+    <string name="error_audio_permissions">Доступ к аудио запрещён</string>
+    <string name="error_encoding">Ошибка кодирования</string>
+    <string name="error_network">Проверьте настройки соединения</string>
+    <string name="error_server">Ошибка сервера</string>
+    <string name="error_cancelled">Операция отменена</string>
+    <string name="error_no_speech">Речь не обнаружена</string>
+    <string name="error_no_text_to_syntesize">Нет текста для синтеза речи</string>
+    <string name="error_not_available">Сервис недоступен</string>
+    <string name="error_busy">Предыдущая операция не завершена</string>
+    <string name="error_unknown">Неизвестная ошибка</string>
+    <string name="error_sk_not_initialized">Не удалось запустить распознавание. Проверьте настройки соединения</string>
+
+    <string name="content_description_play">Воспроизвести</string>
+
+    <!-- Questionnaire -->
+    <string name="questionnaire_progress">%1$s / %2$s. Расскажите о себе</string>
+
+    <string name="question_impairment">Есть ли у вас нарушение слуха?</string>
+    <string name="question_hearing2deaf">Как часто вы общаетесь с глухими или слабослышащими?</string>
+    <string name="question_person">Вы будете использовать приложение для общения с человеком с нарушением слуха?</string>
+    <string name="question_deaf2hearing">Как часто вы общаетесь со слышащими?</string>
+    <string name="question_articulation">Вы хорошо говорите?</string>
+    <string name="question_hearing">Как вы слышите?</string>
+    <string name="question_lipreading">Хорошо ли вы читаете по губам?</string>
+
+    <string-array name="questionnaire_articulation">
+        <item>Да, меня почти всегда понимают</item>
+        <item>Нет, меня часто не понимают</item>
+        <item>Я не говорю</item>
+    </string-array>
+
+    <string-array name="questionnaire_frequency">
+        <item>Каждый день</item>
+        <item>Несколько раз в неделю</item>
+        <item>Несколько раз в месяц</item>
+    </string-array>
+
+    <string-array name="questionnaire_yesno">
+        <item>Да</item>
+        <item>Нет</item>
+    </string-array>
+
+    <string-array name="questionnaire_impairment">
+        <item>Да, частичное</item>
+        <item>Да, полное</item>
+        <item>Нет, я хорошо слышу</item>
+    </string-array>
+
+    <string-array name="questionnaire_lipreading">
+        <item>Да</item>
+        <item>Не очень</item>
+        <item>Я не читаю по губам</item>
+    </string-array>
+
+    <string name="quality_feedback_dialog_title">Оцените качество распознавания</string>
+    <string name="quality_feedback_excellent_title">Отлично</string>
+    <string name="quality_feedback_excellent_subtitle">Совсем без ошибок</string>
+    <string name="quality_feedback_good_title">Хорошо</string>
+    <string name="quality_feedback_good_subtitle">Почти без ошибок</string>
+    <string name="quality_feedback_not_good_title">Не очень</string>
+    <string name="quality_feedback_not_good_subtitle">Ошибок много</string>
+    <string name="quality_feedback_bad_title">Плохо</string>
+    <string name="quality_feedback_bad_subtitle">В основном речь распознаётся неправильно</string>
+    <string name="close">Закрыть</string>
+
+    <string name="tutorial_dialog_title">Обратите внимание</string>
+    <string name="tutorial_dialog_block1">Приложение может некорректно распознавать речь глухих и слабослышащих людей. Также оно вряд ли поможет понять, что говорят по телевизору или по телефону.</string>
+    <string name="tutorial_dialog_block2">Лучше всего распознавание работает при следующих условиях:</string>
+    <string name="tutorial_dialog_list">\u00B7 у говорящего хорошая дикция;\n\u00B7 говорит один человек;\n\u00B7 речь медленная, разборчивая и состоит из простых конструкций;\n\u00B7 вокруг достаточно тихо;\n\u00B7 высокая скорость интернета (3G, 4G, WiFi).</string>
+
+    <string name="whats_new_dialog_title">Новости Разговора:</string>
+    <string name="whats_new_dialog_list_to_110">\u00B7 Виджет на главном экране телефона\n\u00B7 Распознавание длинных фраз\n\u00B7 Рекомендации по использованию</string>
+    <string name="whats_new_dialog_list_to_111">\u00B7 Стартовые реплики без подключения к интернету\n\u00B7 Клавиатура с шестью шаблонными фразами\n\u00B7 Поворот экрана чата на 180 градусов\n\u00B7 Более естественные синтезированные голоса</string>
+
+    <string name="no_connection_dialog_title">Нет соединения с интернетом</string>
+    <string name="no_connection_dialog_text">Для работы с приложением подключитесь к сети</string>
+
+    <string name="change_orientation_hint_dialog_title">Поворот экрана</string>
+    <string name="change_orientation_hint_dialog_text">Поверните телефон микрофоном к собеседнику, это улучшит качество распознавания речи.</string>
+    <string name="change_orientation_hint_dialog_orientation_locked">Для этого нужно отключить блокировку ориентации экрана.</string>
+    <string name="open_settings">К настройкам</string>
+
+    <string name="dialog_button_neutral">Понятно</string>
+
+</resources>

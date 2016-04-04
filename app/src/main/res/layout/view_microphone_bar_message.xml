@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/microphone_bar_message_background">
+
+	<TextView
+		android:id="@+id/microphone_bar_message"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:maxLines="2"
+		android:padding="@dimen/dimen_8dp"
+		android:textAppearance="?android:textAppearanceSmall"
+		tools:text="Message Message"/>
+
+</FrameLayout>

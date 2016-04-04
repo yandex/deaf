@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+		style="@style/Widget.Subtitles.TextView.Primary"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/content_inset_material"
+		android:text="@string/tutorial_dialog_block1"
+		android:textColor="@color/text_secondary_dark_color"/>
+
+	<View
+		style="@style/Widget.Subtitles.Toolbar.Divider"
+		android:layout_marginBottom="@dimen/content_inset_material"
+		android:layout_marginLeft="@dimen/content_inset_material"
+		android:layout_marginRight="@dimen/content_inset_material"
+		android:layout_marginTop="@dimen/dimen_8dp"/>
+
+	<TextView
+		style="@style/Widget.Subtitles.TextView.Primary"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/content_inset_material"
+		android:layout_marginLeft="@dimen/content_inset_material"
+		android:layout_marginRight="@dimen/content_inset_material"
+		android:text="@string/tutorial_dialog_block2"
+		android:textColor="@color/text_secondary_dark_color"/>
+
+	<TextView
+		style="@style/Widget.Subtitles.TextView.Primary"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/content_inset_material"
+		android:layout_marginLeft="@dimen/content_inset_material"
+		android:layout_marginRight="@dimen/content_inset_material"
+		android:text="@string/tutorial_dialog_list"
+		android:textColor="@color/text_secondary_dark_color"/>
+
+</LinearLayout>

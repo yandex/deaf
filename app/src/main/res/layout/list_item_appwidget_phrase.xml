@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:id="@+id/phrase"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/text"
+		style="@style/Widget.Subtitles.TextView.Primary"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:maxLines="2"
+		android:padding="@dimen/content_inset_material"
+		android:textSize="@dimen/text_size_phrase"
+		tools:text="Я не слышу. Подскажите, как пройти в библиотеку?"/>
+
+	<FrameLayout
+		style="@style/Widget.Subtitles.List.Divider"
+		android:layout_marginLeft="@dimen/content_inset_material"
+		android:layout_marginRight="@dimen/content_inset_material"/>
+
+</LinearLayout>

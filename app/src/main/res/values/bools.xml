@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="is_large">false</bool>
+    <bool name="animate_layout_changes">false</bool>
+</resources>

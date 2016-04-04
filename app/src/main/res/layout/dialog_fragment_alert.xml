@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/title"
+		style="@style/Widget.Subtitles.TextView.Dialog.Title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="@dimen/dimen_8dp"
+		android:paddingLeft="@dimen/content_inset_material"
+		android:paddingRight="@dimen/content_inset_material"
+		android:paddingTop="@dimen/content_inset_material"
+		tools:text="Title"/>
+
+	<FrameLayout
+		android:id="@+id/content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:animateLayoutChanges="@bool/animate_layout_changes"
+		android:paddingBottom="@dimen/dimen_8dp"
+		android:paddingTop="@dimen/dimen_8dp"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="right|end"
+		android:orientation="horizontal"
+		android:paddingRight="@dimen/content_inset_material"
+		android:paddingLeft="@dimen/content_inset_material">
+
+		<TextView
+			android:id="@+id/negative"
+			style="@style/Widget.Subtitles.TextView.Dialog.Button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/content_inset_material"
+			tools:text="Cancel"/>
+
+		<TextView
+			android:id="@+id/positive"
+			style="@style/Widget.Subtitles.TextView.Dialog.Button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/content_inset_material"
+			android:layout_marginLeft="@dimen/dimen_8dp"
+			android:layout_marginStart="@dimen/dimen_8dp"
+			tools:text="OK"/>
+
+	</LinearLayout>
+
+</LinearLayout>

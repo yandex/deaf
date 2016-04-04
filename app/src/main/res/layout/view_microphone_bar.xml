@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/microphone_bar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:minHeight="@dimen/microphone_bar_min_height"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/content_inset_material"
+        android:layout_marginRight="@dimen/content_inset_material">
+
+        <fr.castorflex.android.circularprogressbar.CircularProgressBar
+            android:id="@+id/microphone_bar_progress"
+            android:layout_width="@dimen/microphone_bar_fab_size_normal"
+            android:layout_height="@dimen/microphone_bar_fab_size_normal"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:cpb_color="@color/floating_microphone_color_normal"
+            app:cpb_max_sweep_angle="300"
+            app:cpb_min_sweep_angle="10"
+            app:cpb_rotation_speed="1.0"
+            app:cpb_stroke_width="@dimen/dimen_2dp"
+            app:cpb_sweep_speed="1.0"/>
+
+        <ImageView
+            android:id="@+id/microphone_bar_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<include layout="@layout/layout_toolbar"/>
+
+	<View style="@style/Widget.Subtitles.Toolbar.Divider"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<!--LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<TextView
+					style="@style/Widget.Subtitles.TextView.Primary"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:padding="@dimen/content_inset_material"
+					android:text="@string/settings_recognition_language"/>
+
+				<ToggleButton
+					android:id="@+id/recognition_language_switch"
+					style="@style/Widget.Subtitles.TextView.Primary"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/dimen_8dp"
+					android:layout_marginEnd="@dimen/content_inset_material"
+					android:layout_marginLeft="@dimen/content_inset_material"
+					android:layout_marginRight="@dimen/content_inset_material"
+					android:layout_marginStart="@dimen/content_inset_material"
+					android:layout_marginTop="@dimen/dimen_8dp"
+					android:background="?selectableItemBackground"
+					android:gravity="center"
+					android:minHeight="0dp"
+					android:minWidth="0dp"
+					android:padding="@dimen/dimen_8dp"
+					android:textColor="@color/text_link_color"
+					android:textOff="@string/settings_recognition_language_ukrainian"
+					android:textOn="@string/settings_recognition_language_russian"/>
+
+			</LinearLayout>
+
+			<View
+				style="@style/Widget.Subtitles.Toolbar.Divider"
+				android:layout_marginLeft="@dimen/content_inset_material"
+				android:layout_marginRight="@dimen/content_inset_material"/-->
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<TextView
+					style="@style/Widget.Subtitles.TextView.Primary"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:padding="@dimen/content_inset_material"
+					android:text="@string/settings_vocalization"/>
+
+				<ToggleButton
+					android:id="@+id/vocalization_voice_switch"
+					style="@style/Widget.Subtitles.TextView.Primary"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/dimen_8dp"
+					android:layout_marginEnd="@dimen/content_inset_material"
+					android:layout_marginLeft="@dimen/content_inset_material"
+					android:layout_marginRight="@dimen/content_inset_material"
+					android:layout_marginStart="@dimen/content_inset_material"
+					android:layout_marginTop="@dimen/dimen_8dp"
+					android:background="?selectableItemBackground"
+					android:gravity="center"
+					android:minHeight="0dp"
+					android:minWidth="0dp"
+					android:padding="@dimen/dimen_8dp"
+					android:textColor="@color/text_link_color"
+					android:textOff="@string/settings_vocalization_female"
+					android:textOn="@string/settings_vocalization_male"/>
+
+			</LinearLayout>
+
+			<TextView
+				style="@style/Widget.Subtitles.TextView.Separator"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="start|left|bottom"
+				android:paddingBottom="@dimen/dimen_8dp"
+				android:paddingLeft="@dimen/content_inset_material"
+				android:paddingRight="@dimen/content_inset_material"
+				android:paddingTop="@dimen/content_inset_material"
+				android:text="@string/settings_other"/>
+
+			<View style="@style/Widget.Subtitles.Toolbar.Divider"/>
+
+			<TextView
+				android:id="@+id/about_app"
+				style="@style/Widget.Subtitles.TextView.Primary"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="?selectableItemBackground"
+				android:padding="@dimen/content_inset_material"
+				android:text="@string/about_app"/>
+
+			<View
+				style="@style/Widget.Subtitles.Toolbar.Divider"
+				android:layout_marginLeft="@dimen/content_inset_material"
+				android:layout_marginRight="@dimen/content_inset_material"/>
+
+			<TextView
+				android:id="@+id/about_speech_kit"
+				style="@style/Widget.Subtitles.TextView.Primary"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="?selectableItemBackground"
+				android:padding="@dimen/content_inset_material"
+				android:text="@string/about_speech_kit"/>
+
+			<View
+				style="@style/Widget.Subtitles.Toolbar.Divider"
+				android:layout_marginLeft="@dimen/content_inset_material"
+				android:layout_marginRight="@dimen/content_inset_material"/>
+
+			<TextView
+				android:id="@+id/feedback"
+				style="@style/Widget.Subtitles.TextView.Primary"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="?selectableItemBackground"
+				android:padding="@dimen/content_inset_material"
+				android:text="@string/feedback"/>
+
+			<View
+				style="@style/Widget.Subtitles.Toolbar.Divider"
+				android:layout_marginLeft="@dimen/content_inset_material"
+				android:layout_marginRight="@dimen/content_inset_material"/>
+
+			<TextView
+				android:id="@+id/share_app"
+				style="@style/Widget.Subtitles.TextView.Primary"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="?selectableItemBackground"
+				android:padding="@dimen/content_inset_material"
+				android:text="@string/share_app"/>
+
+			<View
+				style="@style/Widget.Subtitles.Toolbar.Divider"
+				android:layout_marginLeft="@dimen/content_inset_material"
+				android:layout_marginRight="@dimen/content_inset_material"/>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>

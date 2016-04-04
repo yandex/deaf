@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_fullscreen_message"
+        android:orderInCategory="10"
+        android:title="@string/action_fullscreen"/>
+
+    <item
+        android:id="@+id/action_pin_message"
+        android:orderInCategory="20"
+        android:title="@string/action_pin"/>
+
+    <item
+        android:id="@+id/action_unpin_message"
+        android:orderInCategory="30"
+        android:title="@string/action_unpin"/>
+
+    <item
+        android:id="@+id/action_copy_message"
+        android:orderInCategory="40"
+        android:title="@string/action_copy"/>
+
+    <item
+        android:id="@+id/action_delete_message"
+        android:orderInCategory="50"
+        android:title="@string/action_delete"/>
+
+</menu>

@@ -1,0 +1,188 @@
+<resources>
+
+	<!-- Base application theme. -->
+	<style name="Base.Theme.Subtitles" parent="Theme.AppCompat.Light">
+		<!-- Customize your theme here. -->
+	</style>
+
+	<style name="Theme.Subtitles" parent="Base.Theme.Subtitles">
+		<item name="selectableItemBackground">@drawable/list_item_background_selector</item>
+		<item name="selectableItemBackgroundBorderless">@drawable/borderless_background_selector
+		</item>
+		<item name="android:listChoiceBackgroundIndicator">?selectableItemBackground</item>
+		<item name="android:activatedBackgroundIndicator">
+			@drawable/activated_item_background_selector
+		</item>
+
+		<item name="android:actionModeBackground">@color/primary_color</item>
+		<item name="actionModeBackground">@color/primary_color</item>
+
+		<item name="actionBarSize">@dimen/toolbar_height</item>
+
+		<item name="colorPrimary">@color/primary_color</item>
+		<item name="colorPrimaryDark">@color/primary_dark_color</item>
+		<item name="colorAccent">@color/accent_color</item>
+
+		<item name="android:textColor">@color/text_primary_color</item>
+		<item name="android:textColorPrimary">@color/text_primary_color</item>
+		<item name="android:textColorSecondary">@color/text_secondary_color</item>
+		<item name="android:textColorHint">@color/text_hint_color</item>
+
+		<item name="android:windowBackground">@color/background_color</item>
+		<item name="android:windowActionBar">false</item>
+		<item name="windowActionBar">false</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="windowNoTitle">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowActionModeOverlay">true</item>
+		<item name="windowActionModeOverlay">true</item>
+
+		<item name="homeAsUpIndicator">@drawable/ic_ab_back_mtrl_black</item>
+
+		<item name="microphoneBarStyle">@style/Widget.Subtitles.MicrophoneBar</item>
+
+	</style>
+
+	<style name="Widget.Subtitles.Toolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+		<item name="colorControlHighlight">@color/selectable_background_color</item>
+	</style>
+
+	<style name="Widget.Subtitles.MicrophoneBar" parent="">
+		<item name="background_normal_with_message">@color/microphone_bar_background_color</item>
+		<item name="background_active">@color/microphone_bar_background_color_active</item>
+		<item name="background_error">@color/microphone_bar_background_color_error</item>
+		<item name="microphone_normal">@color/floating_microphone_color_normal</item>
+		<item name="microphone_pressed">@color/floating_microphone_color_pressed</item>
+		<item name="microphone_error_normal">@color/floating_microphone_red_color_pressed</item>
+		<item name="microphone_error_pressed">@color/floating_microphone_red_color_normal</item>
+		<item name="message_color">@color/microphone_bar_message_text_color</item>
+		<item name="message_appearance_duration">@android:integer/config_shortAnimTime</item>
+		<item name="message_duration">1500</item>
+		<item name="button_size">@dimen/microphone_bar_fab_size_normal</item>
+		<item name="src">@drawable/ic_microphone</item>
+	</style>
+
+	<style name="Widget.Base.Subtitles.TextView" parent="android:Widget.TextView">
+		<item name="android:gravity">start</item>
+	</style>
+
+	<style name="Widget.Subtitles.TextView.Primary" parent="Widget.Base.Subtitles.TextView">
+		<item name="android:textColor">@color/text_primary_color</item>
+		<item name="android:textSize">@dimen/text_size_primary</item>
+	</style>
+
+	<style name="Widget.Subtitles.TextView.Title" parent="Widget.Subtitles.TextView.Primary">
+		<item name="android:textSize">@dimen/text_size_title</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="Widget.Subtitles.TextView.Secondary" parent="Widget.Base.Subtitles.TextView">
+		<item name="android:textColor">@color/text_secondary_color</item>
+		<item name="android:textSize">@dimen/text_size_secondary</item>
+	</style>
+
+	<style name="Widget.Subtitles.TextView.Separator" parent="Widget.Subtitles.TextView.Secondary">
+		<item name="android:textAllCaps">true</item>
+	</style>
+
+	<style name="Widget.Subtitles.TextView.Dialog.Title" parent="Widget.Subtitles.TextView.Primary">
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:textSize">@dimen/text_size_secondary</item>
+		<item name="android:textAllCaps">true</item>
+	</style>
+
+	<style name="Widget.Subtitles.TextView.Dialog.Button" parent="Widget.Subtitles.TextView.Primary">
+		<item name="android:background">?selectableItemBackground</item>
+		<item name="android:lines">1</item>
+		<item name="android:maxLines">1</item>
+		<item name="android:padding">@dimen/dimen_8dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textAllCaps">true</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@color/text_dialog_button_color</item>
+		<item name="android:textSize">@dimen/text_size_dialog_button</item>
+	</style>
+
+	<style name="Widget.Subtitles.TextView.YandexApps.Title" parent="Widget.Subtitles.TextView.Secondary">
+		<item name="android:textStyle">bold</item>
+		<item name="android:textAllCaps">true</item>
+	</style>
+
+	<style name="Widget.Subtitles.TextView.YandexApps.Item" parent="Widget.Subtitles.TextView.Primary">
+		<item name="android:textSize">@dimen/text_size_yandex_app_name</item>
+	</style>
+
+	<style name="Widget.Subtitles.TextView.Zoomed" parent="Widget.Subtitles.TextView.Primary">
+		<item name="android:autoLink">all</item>
+		<item name="android:linksClickable">true</item>
+		<item name="android:textSize">@dimen/text_size_message_zoomed</item>
+		<item name="android:gravity">center</item>
+	</style>
+
+	<style name="Widget.Base.Subtitles.Button" parent="Widget.AppCompat.Button"/>
+
+	<style name="Widget.Subtitles.Button" parent="Widget.Base.Subtitles.Button"/>
+
+	<style name="Widget.Subtitles.Button.Primary" parent="Widget.Subtitles.Button">
+		<item name="android:textSize">@dimen/text_size_primary</item>
+		<item name="android:textColor">@color/text_primary_color_selector</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:minHeight">@dimen/view_min_height</item>
+		<item name="android:minWidth">@dimen/view_min_width</item>
+		<item name="android:textAllCaps">true</item>
+		<item name="android:gravity">center</item>
+	</style>
+
+	<style name="Widget.Base.Subtitles.EditText" parent="Widget.AppCompat.EditText"/>
+
+	<style name="Widget.Subtitles.EditText" parent="Widget.Base.Subtitles.EditText">
+		<item name="android:textColor">@color/text_primary_color</item>
+		<item name="android:textColorHint">@color/text_hint_color</item>
+		<item name="android:textSize">@dimen/text_size_primary</item>
+		<item name="android:gravity">start|center_vertical</item>
+	</style>
+
+	<style name="Widget.Subtitles.Toolbar.Divider" parent="">
+		<item name="android:background">@color/toolbar_divider_color</item>
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">@dimen/toolbar_divider_height</item>
+	</style>
+
+	<style name="Widget.Subtitles.List.Divider" parent="">
+		<item name="android:background">@color/list_divider_color</item>
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">@dimen/list_divider_height</item>
+	</style>
+
+	<style name="Widget.Base.Subtitles.ListView" parent="Widget.AppCompat.ListView"/>
+
+	<style name="Widget.Subtitles.ListView" parent="Widget.Base.Subtitles.ListView">
+		<item name="android:divider">@color/list_divider_color</item>
+		<item name="android:dividerHeight">@dimen/list_divider_height</item>
+		<item name="android:listSelector">?selectableItemBackground</item>
+	</style>
+
+	<style name="Widget.Subtitles.ListView.Borderless" parent="Widget.Subtitles.ListView">
+		<item name="android:dividerHeight">0dp</item>
+		<item name="android:divider">@android:color/transparent</item>
+	</style>
+
+	<style name="Theme.Subtitles.Dialog.Alert" parent="">
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowBackground">@android:drawable/dialog_holo_light_frame</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+		<item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+		<item name="android:windowActionBar">false</item>
+		<item name="android:windowActionModeOverlay">true</item>
+		<item name="android:windowCloseOnTouchOutside">true</item>
+		<item name="android:colorBackgroundCacheHint">@null</item>
+		<item name="android:windowTitleStyle">@null</item>
+		<item name="android:disabledAlpha">0.5</item>
+		<item name="android:backgroundDimAmount">0.6</item>
+		<item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+		<item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+	</style>
+
+</resources>

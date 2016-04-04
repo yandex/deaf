@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="toolbar" type="id"/>
+
+    <item name="starting_phrases_loader" type="id"/>
+    <item name="conversations_loader" type="id"/>
+    <item name="message_loader" type="id"/>
+    <item name="messages_loader" type="id"/>
+    <item name="typed_messages_loader" type="id"/>
+    <item name="thread_analytics_loader" type="id"/>
+    <item name="quick_responses_loader" type="id"/>
+
+</resources>

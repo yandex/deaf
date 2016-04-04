@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dimen_2dp">2dp</dimen>
+    <dimen name="dimen_4dp">4dp</dimen>
+    <dimen name="dimen_8dp">8dp</dimen>
+    <dimen name="dimen_9dp">9dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_12dp">12dp</dimen>
+    <dimen name="dimen_20dp">20dp</dimen>
+    <dimen name="dimen_32dp">32dp</dimen>
+    <dimen name="dimen_48dp">48dp</dimen>
+
+    <dimen name="view_min_height">56dp</dimen>
+    <dimen name="view_min_width">64dp</dimen>
+
+    <dimen name="navigation_drawer_width">300dp</dimen>
+    <dimen name="navigation_drawer_offset_right">56dp</dimen>
+
+    <dimen name="toolbar_divider_height">1dp</dimen>
+    <dimen name="list_divider_height">0.5dp</dimen>
+
+    <dimen name="keyline_start_content">72dp</dimen>
+    <dimen name="keyline_end_content">32dp</dimen>
+    <dimen name="toolbar_content_inset_material">0dp</dimen>
+    <dimen name="content_inset_material">16dp</dimen>
+
+    <dimen name="fragment_dialog_window_max_width">480dp</dimen>
+    <dimen name="fragment_dialog_window_min_margin">20dp</dimen>
+
+    <dimen name="text_size_title">18sp</dimen>
+    <dimen name="text_size_primary">16sp</dimen>
+    <dimen name="text_size_secondary">12sp</dimen>
+
+    <dimen name="text_size_yandex_app_name">14sp</dimen>
+    <dimen name="text_size_about_header">24sp</dimen>
+    <dimen name="text_size_about_version">15sp</dimen>
+    <dimen name="text_size_description_zoomed">16sp</dimen>
+    <dimen name="text_size_message_zoomed">48sp</dimen>
+    <dimen name="text_size_quality_feedback_subtitle">14sp</dimen>
+    <dimen name="text_size_phrase">14sp</dimen>
+    <dimen name="text_size_dialog_button">14sp</dimen>
+
+    <dimen name="drawable_24">24dp</dimen>
+    <dimen name="drawable_32">32dp</dimen>
+
+    <dimen name="menu_list_item_min_height">48dp</dimen>
+    <dimen name="menu_yandex_apps_title_min_height">28dp</dimen>
+
+    <dimen name="start_conversation_button_radius">28dp</dimen>
+    <dimen name="start_conversation_button_width">200dp</dimen>
+    <dimen name="start_conversation_appwidget_button_width">180dp</dimen>
+    <dimen name="start_conversation_button_margin">18dp</dimen>
+    <dimen name="white_bottom_dim_height">108dp</dimen>
+
+    <dimen name="padding_message_bottom">5dp</dimen>
+    <dimen name="padding_message_top">5dp</dimen>
+    <dimen name="padding_message_incoming_start">8dp</dimen>
+    <dimen name="padding_message_incoming_end">32dp</dimen>
+    <dimen name="padding_message_outgoing_start">16dp</dimen>
+    <dimen name="padding_message_outgoing_end">8dp</dimen>
+
+    <dimen name="list_item_phrases_phrase_padding_vertical">25dp</dimen>
+
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="microphone_bar_fab_size_normal">40dp</dimen>
+    <dimen name="microphone_bar_min_height">56dp</dimen>
+
+    <dimen name="speaker_progress_size">28dp</dimen>
+
+    <dimen name="appwidget_list_margin_bottom">28dp</dimen>
+    <dimen name="appwidget_list_padding_bottom">72dp</dimen>
+
+    <dimen name="supposed_keyboard_height">252dp</dimen>
+
+    <dimen name="zoomed_message_slide_panel_width">27.5dp</dimen>
+
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <View style="@style/Widget.Subtitles.Toolbar.Divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/content_inset_material"
+            android:contentDescription="@null"
+            android:src="@drawable/yandex_talk_logo"/>
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/Widget.Subtitles.TextView.Primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/content_inset_material"
+            android:paddingRight="@dimen/content_inset_material"
+            android:text="@string/yandex_conversation"
+            android:textSize="@dimen/text_size_about_header"/>
+
+        <TextView
+            android:id="@+id/version"
+            style="@style/Widget.Subtitles.TextView.Secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:paddingLeft="@dimen/content_inset_material"
+            android:paddingRight="@dimen/content_inset_material"
+            android:text="@string/app_version_format"
+            android:textSize="@dimen/text_size_about_version"/>
+
+        <TextView
+            android:id="@+id/build"
+            style="@style/Widget.Subtitles.TextView.Secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:paddingLeft="@dimen/content_inset_material"
+            android:paddingRight="@dimen/content_inset_material"
+            android:text="@string/app_build_format"
+            android:textSize="@dimen/text_size_about_version"/>
+
+    </LinearLayout>
+
+    <View style="@style/Widget.Subtitles.Toolbar.Divider"/>
+
+    <TextView
+        android:id="@+id/other_apps"
+        style="@style/Widget.Subtitles.TextView.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:padding="@dimen/content_inset_material"
+        android:text="@string/other_yandex_apps"/>
+
+    <View style="@style/Widget.Subtitles.Toolbar.Divider"/>
+
+    <TextView
+        android:id="@+id/license_agreement"
+        style="@style/Widget.Subtitles.TextView.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:padding="@dimen/content_inset_material"
+        android:text="@string/license_agreement"/>
+
+    <View style="@style/Widget.Subtitles.Toolbar.Divider"/>
+
+    <TextView
+        android:id="@+id/copyright"
+        style="@style/Widget.Subtitles.TextView.Secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/content_inset_material"
+        android:textColor="@color/text_primary_color"
+        android:textSize="@dimen/text_size_about_version"
+        tools:text="2015 (C) Яндекс"/>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:animateLayoutChanges="@bool/animate_layout_changes"
+	android:orientation="vertical">
+
+	<View style="@style/Widget.Subtitles.Toolbar.Divider"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="top"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:id="@+id/action_quick_responses"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/dimen_8dp"
+			android:layout_marginLeft="@dimen/dimen_8dp"
+			android:layout_marginRight="@dimen/dimen_8dp"
+			android:layout_marginTop="@dimen/dimen_8dp"
+			android:background="?selectableItemBackgroundBorderless"
+			android:contentDescription="@string/content_description_quick_responses"
+			android:src="@drawable/ic_switch_to_quick_responses"/>
+
+		<ru.yandex.subtitles.ui.widget.YandexEditText
+			android:id="@+id/text"
+			style="@style/Widget.Subtitles.EditText"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_margin="@dimen/dimen_8dp"
+			android:layout_weight="1"
+			android:background="@android:color/transparent"
+			android:cursorVisible="true"
+			android:focusableInTouchMode="true"
+			android:gravity="start|top"
+			android:hint="@string/type_a_message"
+			android:imeOptions="flagNoExtractUi"
+			android:privateImeOptions="nm"
+			android:inputType="textMultiLine|textAutoCorrect|textCapSentences|textLongMessage"
+			android:maxLines="5"
+			android:paddingBottom="@dimen/dimen_4dp"
+			android:paddingTop="@dimen/dimen_4dp"
+			android:scrollbars="vertical"/>
+
+		<ImageView
+			android:id="@+id/action_send"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/dimen_8dp"
+			android:layout_marginLeft="@dimen/dimen_8dp"
+			android:layout_marginRight="@dimen/dimen_8dp"
+			android:layout_marginTop="@dimen/dimen_8dp"
+			android:background="?selectableItemBackgroundBorderless"
+			android:contentDescription="@string/content_description_send"
+			android:src="@drawable/ic_action_send"/>
+
+	</LinearLayout>
+
+</LinearLayout>

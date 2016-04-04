@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="@bool/animate_layout_changes"
+    android:clickable="false"
+    android:padding="@dimen/dimen_8dp">
+
+    <ImageView
+        android:id="@+id/speak"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_8dp"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/content_description_play"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_vocalize"/>
+
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+        android:id="@+id/speaker_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_9dp"
+        android:layout_marginLeft="@dimen/dimen_8dp"
+        android:layout_marginRight="@dimen/dimen_8dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        app:cpb_color="@color/speaker_progress_color_normal"
+        app:cpb_max_sweep_angle="300"
+        app:cpb_min_sweep_angle="10"
+        app:cpb_rotation_speed="1.0"
+        app:cpb_stroke_width="@dimen/dimen_2dp"
+        app:cpb_sweep_speed="1.0"/>
+
+</FrameLayout>

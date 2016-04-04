@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary_color">#ffd92d</color>
+    <color name="primary_dark_color">#464545</color>
+    <color name="overscroll_color">#ffd92d</color>
+    <color name="accent_color">#0077cc</color>
+
+    <color name="background_color">#fafafa</color>
+    <color name="selectable_background_color">#ffd92d</color>
+    <color name="empty_list_background_color">#f7f7f7</color>
+    <color name="draggable_background_color">#f2f2f2</color>
+
+    <color name="text_primary_color">#000000</color>
+    <color name="text_primary_color_disabled">#c9c6c6</color>
+    <color name="text_secondary_color">#c9c6c6</color>
+    <color name="text_secondary_dark_color">#6c6c6c</color>
+    <color name="text_hint_color">#c9c6c6</color>
+	<color name="text_link_color">#0b60b3</color>
+    <color name="text_dialog_button_color">#0077cc</color>
+    <color name="text_quick_response_color">#ffffff</color>
+
+    <color name="button_primary_solid_color_pressed">#feeace</color>
+    <color name="button_primary_solid_color_normal">#fedd60</color>
+    <color name="button_primary_ripple_color">#88fafafa</color>
+
+    <color name="toolbar_divider_color">#e5e5e5</color>
+    <color name="list_divider_color">#f2f2f2</color>
+
+    <color name="zoomed_message_background_color">#ececec</color>
+
+	<color name="white_bottom_dim_start_color">#ffffff</color>
+	<color name="white_bottom_dim_end_color">#00ffffff</color>
+
+    <color name="conversation_pinned_color">#86b8f2</color>
+
+    <color name="floating_microphone_color_normal">#ffe071</color>
+    <color name="floating_microphone_color_pressed">#ffcc00</color>
+    <color name="floating_microphone_red_color_normal">#f7b7b5</color>
+    <color name="floating_microphone_red_color_pressed">#ea4a44</color>
+
+    <color name="microphone_bar_message_text_color">#000000</color>
+    <color name="microphone_bar_background_color">#ffffff</color>
+    <color name="microphone_bar_background_color_active">#ffffff</color>
+    <color name="microphone_bar_background_color_error">#fdeceb</color>
+
+    <color name="speaker_progress_color_normal">#ffe071</color>
+
+    <color name="color_other_yandex_apps">#80000000</color>
+
+    <color name="quick_responses_background_color">#384349</color>
+
+</resources>
