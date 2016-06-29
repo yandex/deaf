@@ -74,5 +74,6 @@
     <dimen name="supposed_keyboard_height">252dp</dimen>
 
     <dimen name="zoomed_message_slide_panel_width">27.5dp</dimen>
+    <dimen name="yandex_icon_size">72dp</dimen>
 
 </resources>

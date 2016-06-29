@@ -13,8 +13,8 @@
 
     <ImageView
         android:id="@+id/yandex_app_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/yandex_icon_size"
+        android:layout_height="@dimen/yandex_icon_size"
         android:contentDescription="@null"
         android:paddingBottom="@dimen/dimen_4dp"
         android:paddingLeft="@dimen/dimen_8dp"
