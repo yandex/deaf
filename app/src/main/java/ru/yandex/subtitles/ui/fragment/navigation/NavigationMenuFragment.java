@@ -75,6 +75,7 @@ public class NavigationMenuFragment extends AbstractFragment<NavigationMenuFragm
     private final static List<YandexAppItem> sYandexApps = new ArrayList<YandexAppItem>();
 
     static {
+        sYandexApps.add(new YandexAppItem(R.drawable.ic_yandex_search, R.string.yandex_search, R.string.yandex_search_package));
         sYandexApps.add(new YandexAppItem(R.drawable.ic_yandex_browser, R.string.yandex_browser, R.string.yandex_browser_package));
         sYandexApps.add(new YandexAppItem(R.drawable.ic_yandex_navigator, R.string.yandex_navigator, R.string.yandex_navigator_package));
         sYandexApps.add(new YandexAppItem(R.drawable.ic_yandex_disk, R.string.yandex_disk, R.string.yandex_disk_package));

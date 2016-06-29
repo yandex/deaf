@@ -57,6 +57,8 @@
 
     <string name="other_yandex_apps">Другие приложения Яндекса</string>
     <string name="other_yandex_apps_url">https://mobile.yandex.ru</string>
+    <string name="yandex_search">Яндекс</string>
+    <string name="yandex_search_package">ru.yandex.searchplugin</string>
     <string name="yandex_browser">Браузер</string>
     <string name="yandex_browser_package">com.yandex.browser</string>
     <string name="yandex_navigator">Навигатор</string>
